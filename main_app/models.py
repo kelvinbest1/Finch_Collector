@@ -41,7 +41,7 @@ class Feeding(models.Model):
     choices=MEALS,
     default=MEALS[0][0]
   )
-  # Create a cat_id FK
+ 
   finch = models.ForeignKey(
     Finch,
     on_delete=models.CASCADE
